@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import org.junit.After;
 import org.junit.Test;
 
+import br.univel.ctrl.ClienteDao;
+
 public class ConexaoBancoTeste {
 
 	private Connection c;
@@ -15,7 +17,7 @@ public class ConexaoBancoTeste {
 	@Test
 	public void ConecaoBancoTeste() throws SQLException, ClassNotFoundException{
 		
-		c = new DaoImp().Conexao();
+		c = new ClienteDao().Conexao();
 		
 		assertNotNull(c);
 	

@@ -125,7 +125,5 @@ public class Pessoa implements Serializable{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
+
 }
